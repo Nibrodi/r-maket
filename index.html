@@ -257,7 +257,85 @@
         <div>4.7/5</div>
       </div>
     </div>
+    <div class="place-cont">
+      <div class="place-box">
+        <h3>Детские сады и школы, больницы</h3>
+        <div><img src="img/hall.png" alt="hall"><img src="img/hall.png" alt="hall"></div>
+        <div class="place-info">
+          <div id="tabs">
+            <div class="tab whiteborder">Сад №12</div>
+            <div class="tab gray">Василек</div>
+            <div class="tab">ИП Слухова</div>
+            <div class="tabContent">
+              <div><img src="img/иконка_меню_1.png" alt="menu">Бесплатный набор, осуществляется с 1 апреля,
+                Возраст детей: с 1-7 лет,
+                Вместимость: 3 группы по 10 чел.
+                Доп. образование: англ, математика, рисование</div>
+              <div><img src="img/Иконка_режим работы.png" alt="clock">Режим работы с 8:00-21:00</div>
+              <div><img src="img/поиск-иконка.png" alt="location">
+                <p>Пешком: <span>15 минут</span></p>
+                <p>Общ.транспорт: <span>10 минут</span></p>
+                <p>Автомобиль: <span>10 минут</span></p>
+              </div>
+              <div class="more-photo">
+                <img src="img/фото_сад.jpg" alt="child">
+                <a href="#">Смотреть на карте</a>
+                <img src="img/больше_лупа.png" alt="lupa">
+              </div>
+            </div>
+            <div class="tabContent">2</div>
+            <div class="tabContent">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="place-box">Блок 2</div>
+        <div class="place-box">Блок 3</div>
+        <div class="place-box">Блок 4</div>
+        <div class="place-box">Блок 5</div> -->
   </main>
+  <script>
+    var tab; // заголовок вкладки
+    var tabContent; // блок содержащий контент вкладки
+
+
+    window.onload = function () {
+      tabContent = document.getElementsByClassName('tabContent');
+      tab = document.getElementsByClassName('tab');
+      hideTabsContent(1);
+    }
+
+    document.getElementById('tabs').onclick = function (event) {
+      var target = event.target;
+      if (target.className == 'tab') {
+        for (var i = 0; i < tab.length; i++) {
+          if (target == tab[i]) {
+            showTabsContent(i);
+            break;
+          }
+        }
+      }
+    }
+
+    function
+    hideTabsContent(a) {
+      for (var i = a; i < tabContent.length; i++) {
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add("hide");
+        tab[i].classList.remove('whiteborder');
+      }
+    }
+
+    function showTabsContent(b) {
+      if (tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+      }
+    }
+  </script>
+
 </body>
 
 </html>

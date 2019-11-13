@@ -1480,6 +1480,86 @@ main {
       }
     }
   }
+
+  .place-cont {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    margin: 4px 0 0 757px;
+
+    .place-box {
+      margin: 5px;
+      padding: 20px;
+      flex: 0 1 auto;
+      width: 860px;
+      height: 212px;
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+        #F2358D;
+      //opacity: 0.1;
+      border-radius: 5px 5px 0px 0px;
+      //z-index: -100;
+    }
+
+    .place-info {
+
+      #tabs .tab {
+        display: inline-block;
+
+        padding: 5px 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+      }
+
+      #tabs .whiteborder {
+
+        border-bottom: 1px solid rgb(126, 126, 126);
+        background: rgba(203, 222, 240, 0.5);
+        //opacity: 0.5;
+        border-radius: 5px 5px 0px 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #666666;
+      }
+
+      #tabs .gray {
+        background: #F1F1F1;
+        border-radius: 5px 5px 0px 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #666666;
+
+        &:hover {
+          background: rgb(182, 182, 182);
+        }
+      }
+
+      #tabs .tabContent {
+        width: 300px;
+        height: 60px;
+        //border: 1px solid #707070;
+        position: relative;
+        top: -1px;
+        z-index: 1;
+        padding: 10px;
+        border-radius: 0 0 3px 3px
+      }
+
+      #tabs .hide {
+        display: none;
+      }
+
+      #tabs .show {
+        display: block;
+      }
+    }
+  }
 }
 
 
