@@ -259,20 +259,26 @@
     </div>
     <div class="place-cont">
       <div class="place-box">
+        <div class="op"></div>
         <h3>Детские сады и школы, больницы</h3>
-        <div><img src="img/hall.png" alt="hall"><img src="img/hall.png" alt="hall"></div>
+        <div class="img-box"><img src="img/hall.png" alt="hall"><img src="img/hall.png" alt="hall"></div>
         <div class="place-info">
           <div id="tabs">
-            <div class="tab whiteborder">Сад №12</div>
+            <div class="tab whiteborder gray">Сад №12</div>
             <div class="tab gray">Василек</div>
-            <div class="tab">ИП Слухова</div>
+            <div class="tab gray">ИП Слухова</div>
             <div class="tabContent">
-              <div><img src="img/иконка_меню_1.png" alt="menu">Бесплатный набор, осуществляется с 1 апреля,
-                Возраст детей: с 1-7 лет,
-                Вместимость: 3 группы по 10 чел.
-                Доп. образование: англ, математика, рисование</div>
-              <div><img src="img/Иконка_режим работы.png" alt="clock">Режим работы с 8:00-21:00</div>
-              <div><img src="img/поиск-иконка.png" alt="location">
+              <div class="text-1"><img src="img/иконка_меню_1.png" alt="menu">
+                <p>Бесплатный набор, осуществляется с 1
+                  апреля,
+                  Возраст детей: с 1-7 лет,
+                  Вместимость: 3 группы по 10 чел.
+                  Доп. образование: англ, математика, рисование</p>
+              </div>
+              <div class="text-2"><img src="img/Иконка_режим работы.png" alt="clock">
+                <p>Режим работы с 8:00-21:00</p>
+              </div>
+              <div class="text-3"><img src="img/поиск-иконка.png" alt="location">
                 <p>Пешком: <span>15 минут</span></p>
                 <p>Общ.транспорт: <span>10 минут</span></p>
                 <p>Автомобиль: <span>10 минут</span></p>
@@ -283,11 +289,12 @@
                 <img src="img/больше_лупа.png" alt="lupa">
               </div>
             </div>
-            <div class="tabContent">2</div>
-            <div class="tabContent">3</div>
+            <div class="tabContent">о! тут может быть контент </div>
+            <div class="tabContent">и даже тут)</div>
           </div>
         </div>
       </div>
+
     </div>
     <!-- <div class="place-box">Блок 2</div>
         <div class="place-box">Блок 3</div>
@@ -307,7 +314,7 @@
 
     document.getElementById('tabs').onclick = function (event) {
       var target = event.target;
-      if (target.className == 'tab') {
+      if (target.className == 'tab gray') {
         for (var i = 0; i < tab.length; i++) {
           if (target == tab[i]) {
             showTabsContent(i);
@@ -322,6 +329,7 @@
       for (var i = a; i < tabContent.length; i++) {
         tabContent[i].classList.remove('show');
         tabContent[i].classList.add("hide");
+        tab[i].classList.add('gray');
         tab[i].classList.remove('whiteborder');
       }
     }
@@ -330,6 +338,7 @@
       if (tabContent[b].classList.contains('hide')) {
         hideTabsContent(0);
         tab[b].classList.add('whiteborder');
+        tab[b].classList.remove('gray');
         tabContent[b].classList.remove('hide');
         tabContent[b].classList.add('show');
       }

@@ -375,7 +375,7 @@ main {
       width: 356px;
       height: 140px;
       background: #fff;
-      border-radius: 30px;
+      border-radius: 8px;
 
       .btn-slider {
         position: relative;
@@ -442,6 +442,8 @@ main {
       }
 
       .sl-info-var {
+        padding-top: 7px;
+
         p {
           position: absolute;
           background: rgb(255, 255, 255);
@@ -720,7 +722,7 @@ main {
       width: 356px;
       height: 140px;
       background: #fff;
-      border-radius: 30px;
+      border-radius: 8px;
 
       .btn-slider-2 {
         position: relative;
@@ -787,6 +789,8 @@ main {
       }
 
       .sl-info-var-2 {
+        padding-top: 7px;
+
         p {
           position: absolute;
           background: rgb(255, 255, 255);
@@ -1065,7 +1069,7 @@ main {
       width: 356px;
       height: 140px;
       background: #fff;
-      border-radius: 30px;
+      border-radius: 8px;
 
       .btn-slider-3 {
         position: relative;
@@ -1132,6 +1136,8 @@ main {
       }
 
       .sl-info-var-3 {
+        padding-top: 7px;
+
         p {
           position: absolute;
           background: rgb(255, 255, 255);
@@ -1484,31 +1490,69 @@ main {
   .place-cont {
     display: flex;
     flex-flow: column nowrap;
-    width: 50%;
     margin: 4px 0 0 757px;
+
 
     .place-box {
       margin: 5px;
       padding: 20px;
       flex: 0 1 auto;
-      width: 860px;
-      height: 212px;
-      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
-        #F2358D;
-      //opacity: 0.1;
-      border-radius: 5px 5px 0px 0px;
-      //z-index: -100;
+
+
+      .op {
+        position: absolute;
+        width: 860px;
+        height: 210px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+          #F2358D;
+        border-radius: 5px 5px 0px 0px;
+        opacity: 0.1;
+        z-index: -100;
+      }
+
+
+
+      h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 152.34%;
+        letter-spacing: 0.25px;
+        color: #4F4F4F;
+        margin-left: 20px;
+      }
     }
 
+    .img-box {
+      margin-left: 15px;
+
+      img:first-child {
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        margin-top: 10px;
+      }
+
+      img:last-child {
+        width: 50px;
+        height: 50px;
+        margin: 85px 0 0 135px;
+        position: absolute;
+      }
+    }
+
+
     .place-info {
+      margin: 0px 0 0 230px;
 
       #tabs .tab {
         display: inline-block;
-
-        padding: 5px 10px;
+        //padding: 5px 10px;
         cursor: pointer;
         position: relative;
         z-index: 5;
+        padding: 6px 20px 6px 20px;
       }
 
       #tabs .whiteborder {
@@ -1541,7 +1585,7 @@ main {
       }
 
       #tabs .tabContent {
-        width: 300px;
+        width: 685px;
         height: 60px;
         //border: 1px solid #707070;
         position: relative;
@@ -1549,6 +1593,93 @@ main {
         z-index: 1;
         padding: 10px;
         border-radius: 0 0 3px 3px
+      }
+
+      .text-1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        color: #333333;
+        width: 295px;
+        height: 120%;
+        margin-left: -15px;
+
+        p {
+          margin: -24px 0 0 24px;
+        }
+      }
+
+
+
+      .text-2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        color: #333333;
+        width: 295px;
+        margin-left: -15px;
+
+        p {
+          margin: -22px 0 0 24px;
+        }
+
+      }
+
+      .text-3 {
+        display: flex;
+        margin: 10px 0 0 -9px;
+
+        p {
+          padding: 3px 0 0 9px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: #333333;
+
+          span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #999999;
+          }
+        }
+      }
+
+      .more-photo {
+        img:first-child {
+          margin: -155px 0 0 428px;
+          position: absolute;
+        }
+
+        a {
+          text-decoration: none;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 12px;
+          color: #18298C;
+          border-bottom: 1px dotted #18298C;
+          margin: -23px 0 0 430px;
+          position: absolute;
+
+          &:hover {
+            border-bottom: none;
+          }
+        }
+
+        img:last-child {
+          position: absolute;
+          margin: -26px 0 0 550px;
+        }
       }
 
       #tabs .hide {
