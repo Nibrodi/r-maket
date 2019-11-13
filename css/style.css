@@ -1213,7 +1213,7 @@ main .place-cont {
       display: flex;
       margin: 10px 0 0 -9px; }
       main .place-cont .place-info .text-3 p {
-        padding: 3px 0 0 9px;
+        padding: 3px 8px 0 3px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
