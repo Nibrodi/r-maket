@@ -1033,27 +1033,22 @@ main .big-photo {
     color: #666666;
     width: 310px;
     padding-bottom: 20px; }
-  main .big-photo .b-list ul li:last-child {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
-    background: -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); }
-    main .big-photo .b-list ul li:last-child a {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 14px;
-      color: #18298C;
-      border-bottom: 1px dotted #18298C;
-      text-decoration: none;
-      margin-left: 65px; }
-      main .big-photo .b-list ul li:last-child a:hover {
-        border-bottom: none; }
-    main .big-photo .b-list ul li:last-child i {
-      font-size: 12px;
-      color: #18298C;
-      padding-left: 9px; }
+  main .big-photo .b-list ul li:last-child a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #18298C;
+    border-bottom: 1px dotted #18298C;
+    text-decoration: none;
+    margin-left: 65px; }
+    main .big-photo .b-list ul li:last-child a:hover {
+      border-bottom: none; }
+  main .big-photo .b-list ul li:last-child i {
+    font-size: 12px;
+    color: #18298C;
+    padding-left: 9px; }
 
 main .rating-block {
   margin: -527px 0 0 763px;
@@ -1109,9 +1104,19 @@ main .place-cont {
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   margin: 4px 0 0 757px; }
+  main .place-cont .road {
+    position: absolute;
+    z-index: -99; }
+  main .place-cont .clearfix:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
   main .place-cont .place-box {
-    margin: 5px;
-    padding: 20px;
+    margin: 7px 0 0 0;
+    height: 212px;
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
@@ -1148,15 +1153,53 @@ main .place-cont {
       margin: 85px 0 0 135px;
       position: absolute; }
   main .place-cont .place-info {
-    margin: 0px 0 0 230px; }
-    main .place-cont .place-info #tabs .tab {
-      display: inline-block;
+    margin: 0px 0 0 214px; }
+    main .place-cont .place-info .tabs__caption {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      list-style: none;
+      position: relative;
+      margin: -1px 0 0 -1px;
+      width: 442px; }
+    main .place-cont .place-info .tabs__caption li:last-child:before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: -2px;
+      z-index: -1;
+      height: 5px; }
+    main .place-cont .place-info .tabs__caption:after {
+      content: '';
+      display: table;
+      clear: both; }
+    main .place-cont .place-info .tabs__caption li {
       cursor: pointer;
       position: relative;
       z-index: 5;
-      padding: 6px 20px 6px 20px; }
-    main .place-cont .place-info #tabs .whiteborder {
-      border-bottom: 1px solid #7e7e7e;
+      padding: 6px 15px 6px 20px;
+      background: #F1F1F1;
+      border-radius: 5px 5px 0px 0px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #666666;
+      margin-right: 2px;
+      margin-bottom: 2px; }
+      main .place-cont .place-info .tabs__caption li:hover {
+        background: #b6b6b6; }
+    main .place-cont .place-info .tabs__caption li:not(.active) {
+      cursor: pointer; }
+    main .place-cont .place-info .tabs__caption li:not(.active):hover {
+      background: #b6b6b6; }
+    main .place-cont .place-info .tabs__caption .active {
       background: rgba(203, 222, 240, 0.5);
       border-radius: 5px 5px 0px 0px;
       font-family: Roboto;
@@ -1165,91 +1208,208 @@ main .place-cont {
       font-size: 12px;
       line-height: 14px;
       color: #666666; }
-    main .place-cont .place-info #tabs .gray {
-      background: #F1F1F1;
-      border-radius: 5px 5px 0px 0px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 14px;
-      color: #666666; }
-      main .place-cont .place-info #tabs .gray:hover {
-        background: #b6b6b6; }
-    main .place-cont .place-info #tabs .tabContent {
-      width: 685px;
-      height: 60px;
-      position: relative;
-      top: -1px;
-      z-index: 1;
-      padding: 10px;
-      border-radius: 0 0 3px 3px; }
-    main .place-cont .place-info .text-1 {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 120%;
-      color: #333333;
-      width: 295px;
-      height: 120%;
-      margin-left: -15px; }
-      main .place-cont .place-info .text-1 p {
-        margin: -24px 0 0 24px; }
-    main .place-cont .place-info .text-2 {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 120%;
-      color: #333333;
-      width: 295px;
-      margin-left: -15px; }
-      main .place-cont .place-info .text-2 p {
-        margin: -22px 0 0 24px; }
-    main .place-cont .place-info .text-3 {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin: 10px 0 0 -9px; }
-      main .place-cont .place-info .text-3 p {
-        padding: 3px 8px 0 3px;
+    main .place-cont .place-info .tabs__caption .active:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 5px; }
+    main .place-cont .place-info .tabs__content {
+      display: none;
+      border-radius: 0 5px 5px 5px;
+      padding: 7px 15px; }
+      main .place-cont .place-info .tabs__content .text-1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
-        line-height: 14px;
-        color: #333333; }
-        main .place-cont .place-info .text-3 p span {
+        line-height: 120%;
+        color: #333333;
+        width: 350px;
+        height: auto; }
+        main .place-cont .place-info .tabs__content .text-1 i {
+          font-size: 16px;
+          color: #a7adaf; }
+        main .place-cont .place-info .tabs__content .text-1 p {
+          margin-left: 10px; }
+      main .place-cont .place-info .tabs__content .text-2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        color: #333333;
+        width: 295px;
+        padding-top: 1%; }
+        main .place-cont .place-info .tabs__content .text-2 p {
+          margin: 3px 0 0 7px; }
+        main .place-cont .place-info .tabs__content .text-2 i {
+          font-size: 19px;
+          color: #a7adaf; }
+      main .place-cont .place-info .tabs__content .text-3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 10px 0 0 2px; }
+        main .place-cont .place-info .tabs__content .text-3 i {
+          font-size: 21px;
+          color: #a7adaf; }
+        main .place-cont .place-info .tabs__content .text-3 p {
+          display: block;
+          padding: 4px 0 0 11px;
           font-family: Roboto;
           font-style: normal;
           font-weight: normal;
           font-size: 12px;
           line-height: 14px;
-          color: #999999; }
-    main .place-cont .place-info .more-photo img:first-child {
-      margin: -155px 0 0 428px;
-      position: absolute; }
-    main .place-cont .place-info .more-photo a {
-      text-decoration: none;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 10px;
-      line-height: 12px;
-      color: #18298C;
-      border-bottom: 1px dotted #18298C;
-      margin: -23px 0 0 430px;
-      position: absolute; }
-      main .place-cont .place-info .more-photo a:hover {
-        border-bottom: none; }
-    main .place-cont .place-info .more-photo img:last-child {
-      position: absolute;
-      margin: -26px 0 0 550px; }
-    main .place-cont .place-info #tabs .hide {
-      display: none; }
-    main .place-cont .place-info #tabs .show {
+          color: #333333; }
+          main .place-cont .place-info .tabs__content .text-3 p span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #999999; }
+      main .place-cont .place-info .tabs__content .more-photo img:first-child {
+        position: absolute;
+        margin: -160px 0 0 440px;
+        width: 173px;
+        height: 115px; }
+      main .place-cont .place-info .tabs__content .more-photo a {
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: #18298C;
+        border-bottom: 1px dotted #18298C;
+        margin: -37px 29px 0 442px;
+        position: absolute; }
+        main .place-cont .place-info .tabs__content .more-photo a:hover {
+          border-bottom: none; }
+      main .place-cont .place-info .tabs__content .more-photo img:last-child {
+        position: absolute;
+        margin: -37px 0 0 550px; }
+    main .place-cont .place-info .tabs__content.active {
       display: block; }
+    main .place-cont .place-info .vertical .tabs__caption {
+      float: left;
+      display: block; }
+    main .place-cont .place-info .vertical .tabs__caption li {
+      float: none;
+      border-width: 2px 0 2px 2px;
+      border-radius: 5px 0 0 5px; }
+    main .place-cont .place-info .vertical .tabs__caption li:last-child:before {
+      display: none; }
+    main .place-cont .place-info .vertical .tabs__caption .active:after {
+      left: auto;
+      top: 0;
+      right: -2px;
+      bottom: 0;
+      width: 2px;
+      height: auto; }
+    main .place-cont .place-info .vertical .tabs__content {
+      overflow: hidden; }
+  main .place-cont .place-box .op-1 {
+    position: absolute;
+    width: 860px;
+    height: 210px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #83A605;
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #83A605;
+    background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #83A605;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #83A605;
+    opacity: 0.25;
+    border-radius: 5px 5px 0px 0px;
+    z-index: -100; }
+  main .place-cont .place-box .img-box-1 {
+    margin-left: 15px; }
+    main .place-cont .place-box .img-box-1 img:first-child {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      margin: 15px 0 0 10px; }
+    main .place-cont .place-box .img-box-1 img:last-child {
+      width: 78px;
+      height: 78px;
+      margin: 50px 0 0 110px;
+      position: absolute; }
+  main .place-cont .place-box .op-2 {
+    position: absolute;
+    width: 860px;
+    height: 210px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #41AEF2;
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #41AEF2;
+    background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #41AEF2;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #41AEF2;
+    opacity: 0.15;
+    border-radius: 5px 5px 0px 0px;
+    z-index: -100; }
+  main .place-cont .place-box .img-box-2 {
+    margin-left: 15px; }
+    main .place-cont .place-box .img-box-2 img:first-child {
+      width: 59px;
+      height: 59px;
+      position: absolute;
+      margin: 65px 0 0 10px; }
+    main .place-cont .place-box .img-box-2 img:last-child {
+      width: 65px;
+      height: 65px;
+      margin: 10px 0 0 110px;
+      position: absolute; }
+  main .place-cont .place-box .op-3 {
+    position: absolute;
+    width: 860px;
+    height: 210px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #F2E205;
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F2E205;
+    background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F2E205;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F2E205;
+    opacity: 0.15;
+    border-radius: 5px 5px 0px 0px;
+    z-index: -100; }
+  main .place-cont .place-box .img-box-3 {
+    margin-left: 15px; }
+    main .place-cont .place-box .img-box-3 img:first-child {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      margin: 5px 0 0 55px; }
+    main .place-cont .place-box .img-box-3 img:last-child {
+      width: 58px;
+      height: 58px;
+      margin: 95px 0 0 125px;
+      position: absolute; }
+  main .place-cont .place-box .op-4 {
+    position: absolute;
+    width: 860px;
+    height: 210px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #F26D6D;
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F26D6D;
+    background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F26D6D;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F26D6D;
+    opacity: 0.2;
+    border-radius: 0px 0px 5px 5px;
+    z-index: -100; }
+  main .place-cont .place-box .img-box-4 {
+    margin-left: 15px; }
+    main .place-cont .place-box .img-box-4 img:first-child {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      margin: 25px 0 0 30px; }
+    main .place-cont .place-box .img-box-4 img:last-child {
+      width: 50px;
+      height: 50px;
+      margin: 95px 0 0 125px;
+      position: absolute; }
 
 @media screen and (max-width: 1570px) {
   header .header-flex-cont .header-flex-box:first-child img {
