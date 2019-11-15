@@ -182,9 +182,11 @@ nav {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      padding-bottom: 10px; }
       nav ul li a:hover {
-        color: #535353; }
+        color: #535353;
+        border-bottom: 5px solid #FFFF8C; }
 
 main .flex-card-arrow {
   display: -webkit-inline-box;
@@ -326,9 +328,7 @@ main .sidebar-block-1 {
     width: 356px;
     height: 140px;
     background: #fff;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8); }
+    border-radius: 8px; }
     main .sidebar-block-1 .slider-full .btn-slider {
       position: relative;
       width: 15px;
@@ -794,8 +794,7 @@ main .sidebar-block-3 {
         color: #333333;
         margin: -17px 0 0 31px; }
   main .sidebar-block-3 .slider-3:hover .slider-full-3 {
-    display: block;
-    z-index: 100; }
+    display: block; }
   main .sidebar-block-3 .slider-full-3 {
     display: none;
     margin-top: -140px;
@@ -1412,6 +1411,173 @@ main .place-cont {
       height: 50px;
       margin: 95px 0 0 125px;
       position: absolute; }
+
+main .feedback {
+  width: 810.01px;
+  height: 553px;
+  margin: 24px 0 0 790px; }
+  main .feedback h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    text-align: center; }
+  main .feedback .feedbtn {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 765px;
+    /* height: 80px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* padding-right: 0px; */
+    margin-top: 15px; }
+    main .feedback .feedbtn .f-btn-1 {
+      margin: 10px 10px 0 0;
+      background: #FFFFFF;
+      border: 2px solid #99C6E7;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0px 2px 0px #99C6E7;
+      box-shadow: 0px 2px 0px #99C6E7;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #333333;
+      padding: 6px 22px; }
+      main .feedback .feedbtn .f-btn-1:hover {
+        background: #99C6E7; }
+      main .feedback .feedbtn .f-btn-1:active {
+        background: #99C6E7;
+        -webkit-box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 8px; }
+
+main .window-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-top: 70px; }
+  main .window-chat .w-p {
+    margin: 30px 0 0 -20px;
+    padding: 5px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+  main .window-chat .w-p:first-child .bot-photo {
+    float: left; }
+    main .window-chat .w-p:first-child .bot-photo p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      width: 80px;
+      color: #999999; }
+  main .window-chat .w-p:last-child {
+    margin-top: 55px; }
+    main .window-chat .w-p:last-child .realtor-photo {
+      float: left; }
+      main .window-chat .w-p:last-child .realtor-photo p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        width: 100px;
+        color: #999999; }
+  main .window-chat .text-bot {
+    width: 605.01px;
+    height: 117px;
+    background: url("../img/fon_1.svg") no-repeat top;
+    margin: -70px 0 0 55px; }
+    main .window-chat .text-bot p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #000000;
+      width: 489px;
+      height: 84px;
+      text-align: left;
+      position: absolute;
+      margin: 14px 0 0 45px; }
+    main .window-chat .text-bot .time-message-bot {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 12px;
+      color: #A0A0A0;
+      margin: 100px 0 0 570px;
+      position: absolute; }
+
+main .guest-message {
+  background: url("../img/fon-chat-2.svg") no-repeat top;
+  width: 500px;
+  height: 77px;
+  margin-left: 350px; }
+  main .guest-message p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+    margin: 15px 0 0 30px;
+    position: absolute;
+    width: 438px;
+    height: 42px; }
+  main .guest-message .time-message-guest {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #A0A0A0;
+    position: absolute;
+    margin: 60px 0 0 460px; }
+
+main .text-realtor {
+  width: 605.01px;
+  height: 117px;
+  background: url("../img/fon-chat-3.svg") no-repeat top;
+  margin: -30px 0 0 0px; }
+  main .text-realtor p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+    width: 440px;
+    height: 84px;
+    text-align: left;
+    position: absolute;
+    margin: 14px 0 0 85px; }
+  main .text-realtor .time-message-realtor {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #A0A0A0;
+    margin: 47px 0 0 512px;
+    position: absolute; }
 
 @media screen and (max-width: 1570px) {
   header .header-flex-cont .header-flex-box:first-child img {

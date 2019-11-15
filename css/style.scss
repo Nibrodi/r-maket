@@ -182,9 +182,11 @@ nav {
       text-transform: uppercase;
       display: flex;
       flex-wrap: wrap;
+      padding-bottom: 10px;
 
       &:hover {
         color: #535353;
+        border-bottom: 5px solid #FFFF8C;
       }
     }
 
@@ -377,7 +379,7 @@ main {
       background: #fff;
       border-radius: 8px;
       //z-index: 99998;
-      box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+      //box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
 
       .btn-slider {
         position: relative;
@@ -1062,7 +1064,7 @@ main {
 
     .slider-3:hover .slider-full-3 {
       display: block;
-      z-index: 100;
+      //z-index: 100;
     }
 
     .slider-full-3 {
@@ -1934,6 +1936,206 @@ main {
           position: absolute;
         }
       }
+    }
+  }
+
+  .feedback {
+    width: 810.01px;
+    height: 553px;
+    margin: 24px 0 0 790px;
+
+    h4 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .feedbtn {
+
+      justify-content: flex-end;
+      width: 765px;
+      /* height: 80px; */
+      display: flex;
+      flex-wrap: wrap;
+      /* padding-right: 0px; */
+      margin-top: 15px;
+
+
+      .f-btn-1 {
+        margin: 10px 10px 0 0;
+        background: #FFFFFF;
+        border: 2px solid #99C6E7;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 0px #99C6E7;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        padding: 6px 22px;
+
+        &:hover {
+          background: #99C6E7;
+        }
+
+        &:active {
+          background: #99C6E7;
+          box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .window-chat {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 70px;
+
+
+    .w-p {
+      margin: 30px 0 0 -20px;
+      padding: 5px;
+      flex: 0 1 auto;
+    }
+
+    .w-p:first-child {
+      .bot-photo {
+        float: left;
+
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          width: 80px;
+          color: #999999;
+        }
+      }
+    }
+
+    .w-p:last-child {
+      margin-top: 55px;
+
+      .realtor-photo {
+        float: left;
+
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          width: 100px;
+          color: #999999;
+        }
+      }
+    }
+
+
+    .text-bot {
+      width: 605.01px;
+      height: 117px;
+      background: url('../img/fon_1.svg') no-repeat top;
+      margin: -70px 0 0 55px;
+
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #000000;
+        width: 489px;
+        height: 84px;
+        text-align: left;
+        position: absolute;
+        margin: 14px 0 0 45px;
+
+      }
+
+      .time-message-bot {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: #A0A0A0;
+        margin: 100px 0 0 570px;
+        position: absolute;
+      }
+    }
+  }
+
+  .guest-message {
+    background: url('../img/fon-chat-2.svg') no-repeat top;
+    width: 500px;
+    height: 77px;
+    margin-left: 350px;
+
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #000000;
+      margin: 15px 0 0 30px;
+      position: absolute;
+      width: 438px;
+      height: 42px;
+    }
+
+    .time-message-guest {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 12px;
+      color: #A0A0A0;
+      position: absolute;
+      margin: 60px 0 0 460px;
+    }
+  }
+
+  .text-realtor {
+    width: 605.01px;
+    height: 117px;
+    background: url('../img/fon-chat-3.svg') no-repeat top;
+    margin: -30px 0 0 0px;
+
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #000000;
+      width: 440px;
+      height: 84px;
+      text-align: left;
+      position: absolute;
+      margin: 14px 0 0 85px;
+
+    }
+
+    .time-message-realtor {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 12px;
+      color: #A0A0A0;
+      margin: 47px 0 0 512px;
+      position: absolute;
     }
   }
 }
