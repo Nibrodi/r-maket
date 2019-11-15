@@ -319,14 +319,16 @@ main .sidebar-block-1 {
         margin: -17px 0 0 31px; }
   main .sidebar-block-1 .slider:hover .slider-full {
     display: block;
-    z-index: 100; }
+    z-index: 1; }
   main .sidebar-block-1 .slider-full {
     display: none;
     margin-top: -140px;
     width: 356px;
     height: 140px;
     background: #fff;
-    border-radius: 8px; }
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8); }
     main .sidebar-block-1 .slider-full .btn-slider {
       position: relative;
       width: 15px;

@@ -366,7 +366,7 @@ main {
 
     .slider:hover .slider-full {
       display: block;
-      z-index: 100;
+      z-index: 1;
     }
 
     .slider-full {
@@ -376,6 +376,8 @@ main {
       height: 140px;
       background: #fff;
       border-radius: 8px;
+      //z-index: 99998;
+      box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
 
       .btn-slider {
         position: relative;
